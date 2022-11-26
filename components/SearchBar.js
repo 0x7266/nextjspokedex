@@ -1,11 +1,9 @@
 import { useState } from "react";
 
 export default function SearchBar({ setQuery }) {
-  //console.log(pokemons);
-
   function onChangeHandler(e) {
     e.preventDefault();
-    if (e.target.value.length === 0) {
+    if (e.target.value === "") {
       setQuery(undefined);
     }
     setQuery(e.target.value);

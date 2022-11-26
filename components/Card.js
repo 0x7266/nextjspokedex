@@ -1,26 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Card({ item }) {
+export default function Card({ pokemon }) {
   return (
-    <Link href={`/pokemon/${item.id}`}>
+    <Link href={`/pokemon/${pokemon.name}`}>
       <div className="card rounded-lg h-fit w-72">
         <div className="card-content text-gray-100 h-[300] bg-yellow-300 bg-opacity-30 border-4 border-red-400 rounded-lg flex flex-col items-center shadow">
           <div className="name-id flex justify-between w-full p-2 bg-red-400 rounded-t-sm">
             <div className="name text-2xl font-extrabold">
-              {item.name.toUpperCase()}
+              {pokemon.name.toUpperCase()}
             </div>
-            <div className="name self-center">#{item.id}</div>
+            <div className="name self-center">#{pokemon.id}</div>
           </div>
           <div className="img w-11/12 my-3 rounded-md flex justify-center items-end bg-cover min-h-fit h-48">
             <Image
               unoptimized={true}
-              src={
-                item.sprites.versions["generation-v"]["black-white"].animated[
-                  "front_default"
-                ]
-              }
-              alt={item.name}
+              src={pokemon.gif}
+              alt={pokemon.name}
               width="0"
               height="0"
               className="w-20 pb-3"
@@ -28,7 +24,7 @@ export default function Card({ item }) {
           </div>
           <div className="info grid grid-cols-3 cols items-center w-full">
             <div className="types flex px-3 gap-1 col-span-2">
-              {item.types.map((types, index) => (
+              {pokemon.types.map((types, index) => (
                 <div
                   key={index}
                   className={`py-1 rounded-xl text-sm w-20 text-center ${
@@ -77,10 +73,10 @@ export default function Card({ item }) {
             </div>
             <div className="height-weight px-3 py-1 flex flex-col text-center w-24 justify-self-end gap-1">
               <span className="bg-yellow-500 rounded-xl p-1 text-sm">
-                H: {item.height}
+                H: {pokemon.height}
               </span>
               <span className="bg-yellow-500 rounded-xl p-1 text-sm">
-                W: {item.weight}
+                W: {pokemon.weight}
               </span>
             </div>
           </div>
