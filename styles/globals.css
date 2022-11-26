@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-height: 101vh;
+  background-color: rgb(39 39 42);
+  min-height: 100vh;
+  background-image: url("https://i.imgur.com/Bt0sdpD.jpeg");
+}
+
+.app {
+  backdrop-filter: invert(100%) brightness(20%);
+  min-height: 100vh;
+}
+
+.card {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/81ccfdb7-ac1d-423f-a276-af63abae5ba2/d5oun1x-6975d2e1-093f-4f3f-88f4-21ea09a01e93.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgxY2NmZGI3LWFjMWQtNDIzZi1hMjc2LWFmNjNhYmFlNWJhMlwvZDVvdW4xeC02OTc1ZDJlMS0wOTNmLTRmM2YtODhmNC0yMWVhMDlhMDFlOTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hKSd3iSNIE7Z4i1PYNVGSvgJwz2B0SWyHzJq2Gl1NMw");
+  background-size: cover;
+}
+
+.card-content {
+  backdrop-filter: blur(1px);
+}
+
+.img {
+  background-image: url("https://wallup.net/wp-content/uploads/2016/05/24/143432-nature-Pokemon.jpg");
+  border: solid #eee;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
