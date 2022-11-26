@@ -6,7 +6,7 @@ import logo from "../assets/logo.png";
 export default function Navbar() {
   return (
     <div className="nav-container">
-      <nav className="bg-red-400 bg-opacity-90 flex items-center justify-center gap-5 p-5">
+      <nav className="bg-red-400 bg-opacity-75 flex items-center justify-center gap-5 p-5">
         <Link href="/">
           <Image
             src={logo}

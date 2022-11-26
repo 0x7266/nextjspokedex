@@ -1,11 +1,14 @@
 import Layout from "../components/Layout";
+import { PokemonsContextProvider } from "../context/PokemonsContext";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <PokemonsContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </PokemonsContextProvider>
   );
 }
 
