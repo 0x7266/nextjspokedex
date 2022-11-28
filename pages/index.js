@@ -2,8 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
-import Pagination from "../components/Pagination";
-import Pokedex from "../components/Pokedex";
 import SearchBar from "../components/SearchBar";
 
 export default function Home({ pokemons }) {

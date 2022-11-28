@@ -18,6 +18,7 @@ body {
 }
 
 .app {
+  -webkit-backdrop-filter: invert(100%) brightness(20%);
   backdrop-filter: invert(100%) brightness(20%);
   min-height: 100vh;
 }
@@ -28,6 +29,7 @@ body {
 }
 
 .card-content {
+  -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
 }
 
